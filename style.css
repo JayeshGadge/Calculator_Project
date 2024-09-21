@@ -1,0 +1,69 @@
+/* Centering the calculator */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Styling the calculator box */
+  .calculator {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Styling the display */
+  .display {
+    background-color: #222;
+    color: white;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 80px;
+    line-height: 80px;
+  }
+  
+  /* Styling the buttons container */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  /* General button styles */
+  button {
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  /* Operator buttons styling */
+  .btn-warning {
+    background-color: #ff9500;
+    color: white;
+  }
+  
+  /* Equal button styling */
+  .equal {
+    grid-column: span 2;
+  }
+  
+  /* Light button styles for numbers */
+  .btn-light {
+    background-color: #d4d4d2;
+  }
+  
